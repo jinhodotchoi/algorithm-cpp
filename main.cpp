@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -19,11 +20,19 @@ int fibonacci(int n) {
 }
 
 int main() {
-    cout << "hello, world" << endl;
+    vector<vector<int>> v = {
+        {1, 2, 3}, 
+        {4, 5, 6}, 
+        {7, 8, 9}
+    };
 
-    cout << factorial(5) << endl;
+    for (auto a : v) {
+        for (auto b : a) {
+            cout << b << " ";
+        }
+        cout << endl;
+    }
 
-    cout << fibonacci(5) << endl;
 
     return 0;
 }
