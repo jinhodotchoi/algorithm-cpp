@@ -8,7 +8,7 @@ int main() {
     auto it = lower_bound(v.begin(), v.end(), target);
 
     cout << "begin: " << *v.begin() << endl;
-    cout << "end: " << *v.end() << endl;
+    cout << "end: " << *v.end() << endl; // 아, `끝+1`을 가리키는 것이었다.
 
     if (it == v.end()) {
         cout << "not found" << endl;
