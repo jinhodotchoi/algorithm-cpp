@@ -1,6 +1,6 @@
 echo ">>> start running"
 
-g++ -o build/main main.cpp
+g++ -o build/main questions/$1
 ./build/main
 rm build/main
 
