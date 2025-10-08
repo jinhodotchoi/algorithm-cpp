@@ -19,7 +19,8 @@ cat > $questionName.cpp << EOF
 
 using namespace std;
 
-void mainImpl() {
+void impl() {
+
 }
 
 int main() {
@@ -28,7 +29,7 @@ int main() {
     // for faster input/output
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
-    mainImpl();
+    impl();
 
     return 0;
 }
