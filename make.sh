@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd questions
+pushd questions > /dev/null
 
 questionName=boj-$1
 
@@ -10,8 +10,9 @@ touch $questionName.txt
 
 cat > $questionName.cpp << EOF
 /**
- * @copyright 2025
- * Backjoon $questionName
+ * @copyright Copyright (c) $(date '+%Y') jinho.choi
+ * @see https://www.acmicpc.net/problem/$1
+ * @license This code is for educational purposes only.
  */
 
 #include <bits/stdc++.h>
@@ -22,10 +23,10 @@ void mainImpl() {
 }
 
 int main() {
-    freopen("./$questionName.txt", "r", stdin);
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    // comment below line when submitting to boj website.
+    freopen("./questions/$questionName.txt", "r", stdin);
+    // for faster input/output
+    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
     mainImpl();
 
@@ -35,4 +36,4 @@ EOF
 
 echo ">>> created files regarding to $questionName"
 
-popd
+popd > /dev/null
