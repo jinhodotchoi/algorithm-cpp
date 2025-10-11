@@ -25,7 +25,7 @@ void impl() {
     for (int i = K; i < N; i++) {
         result += v[i];
         result -= v[i - K];
-        // NOTE: max 함수가 있었다!
+        //* max 함수가 있었다!
         max_result = max(max_result, result);
     }
 

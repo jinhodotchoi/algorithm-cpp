@@ -33,7 +33,7 @@ void impl() {
 
 int main() {
     // comment below line when submitting to boj website.
-    freopen("./questions/boj-10988.txt", "r", stdin);
+    // freopen("./questions/boj-10988.txt", "r", stdin);
     // for faster input/output
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 

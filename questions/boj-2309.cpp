@@ -8,7 +8,7 @@ void printV(vector<int> &v) {
     }
 }
 
-// 누적합으로 접근했는데 생각해보니 그럴 필요가 없음...
+//* 누적합으로 접근했는데 생각해보니 그럴 필요가 없음...
 void mainImpl() {
     vector<int> v;
 
@@ -32,10 +32,10 @@ void mainImpl() {
 }
 
 int main() {
-    freopen("./questions/boj-2309.txt", "r", stdin);
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    // comment below line when submitting to boj website.
+    // freopen("./questions/boj-2309.txt", "r", stdin);
+    // for faster input/output
+    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
     mainImpl();
 

@@ -24,7 +24,7 @@ void impl() {
 
     for (int i = 0; i < 26; i++) {
         if (v[i] >= 5) {
-            // 아스키 코드 변환
+            //* 아스키 코드 변환
             cout << (char)(i + 'a');
             flag = true;
         }

@@ -10,7 +10,7 @@ using namespace std;
 
 void impl() {
     string str;
-    // 이런게 있다니;;;
+    //* line 통쨰로 받아오기
     getline(cin, str);
 
     for (int i = 0; i < str.length(); i++) {
@@ -34,7 +34,7 @@ void impl() {
 
 int main() {
     // comment below line when submitting to boj website.
-    freopen("./questions/boj-11655.txt", "r", stdin);
+    // freopen("./questions/boj-11655.txt", "r", stdin);
     // for faster input/output
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
